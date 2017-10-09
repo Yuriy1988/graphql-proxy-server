@@ -1,0 +1,8 @@
+extend type Query {
+  test: Test
+}
+
+type Test {
+  name: String @fake(type:firstName)
+  image: String @fake(type:imageUrl, options: {imageCategory:cats})
+}
